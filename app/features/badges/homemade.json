@@ -43,6 +43,10 @@
 		"displayName": "Art Supplies Pencil Award (Silver)",
 		"authorDiscordId": "1320944066002681876"
 	},
+	"asaudinationaldayevent": {
+		"displayName": "A Saudi national day event",
+		"authorDiscordId": "754368445910614046"
+	},
 	"ausflag": {
 		"displayName": "OCE Open",
 		"authorDiscordId": "1170249805373657093"
@@ -95,6 +99,10 @@
 		"displayName": "Shark Tank: Deep Waters",
 		"authorDiscordId": "528851510222782474"
 	},
+	"blahajrising": {
+		"displayName": "Shark Tank: Rising Waters",
+		"authorDiscordId": "528851510222782474"
+	},
 	"bluelock": {
 		"displayName": "Blue Lock",
 		"authorDiscordId": "528851510222782474"
@@ -136,11 +144,11 @@
 		"authorDiscordId": "308313761779941376"
 	},
 	"buddies1": {
-		"displayName": "Buddies 2vs2",
+		"displayName": "Buddies 2vs2 (1st Place)",
 		"authorDiscordId": "671419359058722826"
 	},
 	"buddies2": {
-		"displayName": "Buddies 2vs2",
+		"displayName": "Buddies 2vs2 (2nd Place)",
 		"authorDiscordId": "671419359058722826"
 	},
 	"calliesit": {
@@ -177,6 +185,10 @@
 	},
 	"champions": {
 		"displayName": "Champions Cup",
+		"authorDiscordId": "752582395076673577"
+	},
+	"championsinv": {
+		"displayName": "Champions Cup Invitational",
 		"authorDiscordId": "752582395076673577"
 	},
 	"chao": {
@@ -315,13 +327,25 @@
 		"displayName": "Proxy Training",
 		"authorDiscordId": "528851510222782474"
 	},
+	"excaliburtierx": {
+		"displayName": "Excalibur's Oath Grandmaster Bracket",
+		"authorDiscordId": "338806780446638082"
+	},
 	"ferris_wheel": {
 		"displayName": "Wheel of Names",
 		"authorDiscordId": "336683473714544641"
 	},
+	"finallife": {
+		"displayName": "Final Life",
+		"authorDiscordId": "338806780446638082"
+	},
 	"fl-collegiate": {
-		"displayName": "Florida Collegiate Draft Cup",
+		"displayName": "Florida Collegiate Cephalopods Event",
 		"authorDiscordId": "285504780154044416"
+	},
+	"flounderfish": {
+		"displayName": "Don't Flounder at the Function",
+		"authorDiscordId": "528851510222782474"
 	},
 	"fluttermane": {
 		"displayName": "Push Paradox: Zones Only",
@@ -423,6 +447,10 @@
 		"displayName": "Golden Brush Award",
 		"authorDiscordId": "338806780446638082"
 	},
+	"goldnaut": {
+		"displayName": "Golden Ratio: Special Edition",
+		"authorDiscordId": "1160529949531316334"
+	},
 	"gyra": {
 		"displayName": "Level Up x2 - Leveled Up!",
 		"authorDiscordId": "528851510222782474"
@@ -490,6 +518,34 @@
 	"inkstrikeinv": {
 		"displayName": "Inkstrike Invitational",
 		"authorDiscordId": "789943264370884708"
+	},
+	"inkvasionzone": {
+		"displayName": "Zones Inkvasion",
+		"authorDiscordId": "338806780446638082"
+	},
+	"inthepaddock1st": {
+		"displayName": "In the Paddock",
+		"authorDiscordId": "683603297839743009"
+	},
+	"inthepaddock2nd": {
+		"displayName": "In the Paddock 2nd",
+		"authorDiscordId": "683603297839743009"
+	},
+	"inthepaddock3rd": {
+		"displayName": "In the Paddock 3rd",
+		"authorDiscordId": "683603297839743009"
+	},
+	"isopodcup": {
+		"displayName": "Isopod Cup (1st)",
+		"authorDiscordId": "824681527815438337"
+	},
+	"isopodcup2": {
+		"displayName": "Isopod Cup (2nd)",
+		"authorDiscordId": "824681527815438337"
+	},
+	"isopodcup3": {
+		"displayName": "Isopod Cup (3rd)",
+		"authorDiscordId": "824681527815438337"
 	},
 	"jamboree": {
 		"displayName": "JJaeigh's Jamboree",
@@ -615,6 +671,18 @@
 		"displayName": "Meet Your Match Counterpick Gauntlet",
 		"authorDiscordId": "631246535560265749"
 	},
+	"mayadiamond1": {
+		"displayName": "Maya's Diamond Heist",
+		"authorDiscordId": "338806780446638082"
+	},
+	"mayadiamond2": {
+		"displayName": "Golden Diamond Heist",
+		"authorDiscordId": "338806780446638082"
+	},
+	"mclaren": {
+		"displayName": "McLaren",
+		"authorDiscordId": "683603297839743009"
+	},
 	"meadowscow": {
 		"displayName": "Moo Moo Cup",
 		"authorDiscordId": "528851510222782474"
@@ -639,10 +707,6 @@
 		"displayName": "Minus One Open",
 		"authorDiscordId": "569271521776762896"
 	},
-	"moxiaward": {
-		"displayName": "Moxi Achievement",
-		"authorDiscordId": "1131109226551459881"
-	},
 	"muchen": {
 		"displayName": "Bastard München",
 		"authorDiscordId": "528851510222782474"
@@ -654,6 +718,10 @@
 	"nascar": {
 		"displayName": "NASCAR",
 		"authorDiscordId": "683603297839743009"
+	},
+	"nautilus47": {
+		"displayName": "Golden Ratio",
+		"authorDiscordId": "1160529949531316334"
 	},
 	"new-game-plus": {
 		"displayName": "New Game +",
@@ -715,6 +783,10 @@
 		"displayName": "Brush Brawls",
 		"authorDiscordId": "338806780446638082"
 	},
+	"octopipalooza": {
+		"displayName": "Octopi Palooza!",
+		"authorDiscordId": "338806780446638082"
+	},
 	"octoshot": {
 		"displayName": "Weapon Lockdown",
 		"authorDiscordId": "338806780446638082"
@@ -731,6 +803,10 @@
 		"displayName": "Oktofest LAN (Second)",
 		"authorDiscordId": "751912670403362836"
 	},
+	"order1": {
+		"displayName": "ORDR S1",
+		"authorDiscordId": "338806780446638082"
+	},
 	"original-message-deleted": {
 		"displayName": "[Original Message Deleted]",
 		"authorDiscordId": "751912670403362836"
@@ -738,6 +814,10 @@
 	"paraflinch": {
 		"displayName": "Paraflinch",
 		"authorDiscordId": "528851510222782474"
+	},
+	"paralarvae": {
+		"displayName": "Paralarvae Parfait",
+		"authorDiscordId": "338806780446638082"
 	},
 	"peashooter": {
 		"displayName": "Peashooter Achievement",
@@ -939,6 +1019,10 @@
 		"displayName": "Sylveon",
 		"authorDiscordId": "338806780446638082"
 	},
+	"smollusk": {
+		"displayName": "Smollusk Low-Level Spire",
+		"authorDiscordId": "1160529949531316334"
+	},
 	"solosquidshowdown": {
 		"displayName": "Solo Squid Showdown",
 		"authorDiscordId": "824681527815438337"
@@ -1087,6 +1171,10 @@
 		"displayName": "TFS Tourneys",
 		"authorDiscordId": "789943264370884708"
 	},
+	"thekscorner": {
+		"displayName": "The K's corner",
+		"authorDiscordId": "776557393848434718"
+	},
 	"three_course_pal": {
 		"displayName": "Squids For Palestinian Kids",
 		"authorDiscordId": "338806780446638082"
@@ -1227,6 +1315,10 @@
 		"displayName": "Tough Tides",
 		"authorDiscordId": "1170249805373657093"
 	},
+	"weaponlockdownspecial": {
+		"displayName": "Weapon Lockdown Special Edition",
+		"authorDiscordId": "338806780446638082"
+	},
 	"whitecat": {
 		"displayName": "White Cat Achievement",
 		"authorDiscordId": "631246535560265749"
@@ -1238,6 +1330,18 @@
 	"wiper": {
 		"displayName": "Squeaky Clean Scrap",
 		"authorDiscordId": "528851510222782474"
+	},
+	"worlddriverschampionship": {
+		"displayName": "WDC #0",
+		"authorDiscordId": "752582395076673577"
+	},
+	"worldendurancechampionship": {
+		"displayName": "WEC #0",
+		"authorDiscordId": "683603297839743009"
+	},
+	"worldrallychampionship": {
+		"displayName": "WRC #0",
+		"authorDiscordId": "683603297839743009"
 	},
 	"zekkocup": {
 		"displayName": "Zekko Cup",

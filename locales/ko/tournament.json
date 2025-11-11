@@ -25,7 +25,6 @@
 	"pre.info.unregister": "",
 	"pre.info.unregister.confirm": "",
 	"pre.info.noHost": "",
-	"pre.info.noScreen": "",
 	"pre.roster.header": "",
 	"pre.roster.footer": "",
 	"pre.roster.addTrusted.header": "",
@@ -135,5 +134,6 @@
 	"progression.error.NAME_MISSING": "",
 	"progression.error.NEGATIVE_PROGRESSION": "",
 	"progression.error.NO_SE_SOURCE": "",
-	"progression.error.NO_DE_POSITIVE": ""
+	"progression.error.NO_DE_POSITIVE": "",
+	"progression.error.SWISS_EARLY_ADVANCE_NO_DESTINATION": ""
 }

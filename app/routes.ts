@@ -85,6 +85,7 @@ export default [
 		"features/object-damage-calculator/routes/object-damage-calculator.tsx",
 	),
 
+	route("/to/search", "features/tournament/routes/to.search.ts"),
 	route("/to/:id", "features/tournament/routes/to.$id.tsx", [
 		index("features/tournament/routes/to.$id.index.ts"),
 		route("register", "features/tournament/routes/to.$id.register.tsx"),
@@ -120,6 +121,7 @@ export default [
 	]),
 	route("luti", "features/tournament/routes/luti.ts"),
 
+	route("/org/new", "features/tournament-organization/routes/org.new.tsx"),
 	...prefix("/org/:slug", [
 		index("features/tournament-organization/routes/org.$slug.tsx"),
 		route("edit", "features/tournament-organization/routes/org.$slug.edit.tsx"),
@@ -205,6 +207,7 @@ export default [
 	]),
 
 	route("/admin", "features/admin/routes/admin.tsx"),
+	route("/api", "features/api/routes/api.tsx"),
 
 	...prefix("/a", [
 		index("features/articles/routes/a.tsx"),

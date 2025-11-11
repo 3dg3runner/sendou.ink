@@ -20,6 +20,7 @@ import { TOURNAMENT } from "~/features/tournament/tournament-constants";
 import { tournamentWebsocketRoom } from "~/features/tournament-bracket/tournament-bracket-utils";
 import { useIsMounted } from "~/hooks/useIsMounted";
 import { useSearchParamState } from "~/hooks/useSearchParamState";
+import { useTimeFormat } from "~/hooks/useTimeFormat";
 import { useVisibilityChange } from "~/hooks/useVisibilityChange";
 import { SENDOU_INK_BASE_URL, tournamentJoinPage } from "~/utils/urls";
 import {
@@ -40,6 +41,7 @@ import "../components/Bracket/bracket.css";
 
 export default function TournamentBracketsPage() {
 	const { t } = useTranslation(["tournament"]);
+	const { formatDateTime, formatTime } = useTimeFormat();
 	const visibility = useVisibilityChange();
 	const { revalidate } = useRevalidator();
 	const user = useUser();
@@ -132,6 +134,15 @@ export default function TournamentBracketsPage() {
 			return `Teams that get eliminated in the first ${Math.abs(
 				Math.min(...(bracket.sources ?? []).flatMap((s) => s.placements)),
 			)} rounds of the losers bracket can play in this bracket`;
+		}
+
+		const advanceThreshold = tournament.brackets[0].settings?.advanceThreshold;
+		if (
+			advanceThreshold &&
+			tournament.ctx.settings.bracketProgression[bracketIdx].sources?.[0]
+				.placements.length === 0
+		) {
+			return `Teams that win at least ${advanceThreshold} sets in the Swiss bracket will advance to this stage`;
 		}
 
 		return null;
@@ -244,16 +255,13 @@ export default function TournamentBracketsPage() {
 							{bracket.startTime ? (
 								<span suppressHydrationWarning>
 									(open{" "}
-									{sub(bracket.startTime, { hours: 1 }).toLocaleString(
-										"en-US",
-										{
-											hour: "numeric",
-											minute: "numeric",
-											weekday: "long",
-										},
-									)}{" "}
+									{formatDateTime(sub(bracket.startTime, { hours: 1 }), {
+										hour: "numeric",
+										minute: "numeric",
+										weekday: "long",
+									})}{" "}
 									-{" "}
-									{bracket.startTime.toLocaleTimeString("en-US", {
+									{formatTime(bracket.startTime, {
 										hour: "numeric",
 										minute: "numeric",
 									})}
@@ -284,13 +292,11 @@ function BracketStarter({
 
 	return (
 		<>
-			{isMounted ? (
+			{isMounted && dialogOpen ? (
 				<BracketMapListDialog
-					isOpen={dialogOpen}
 					close={close}
 					bracket={bracket}
 					bracketIdx={bracketIdx}
-					key={bracketIdx}
 				/>
 			) : null}
 			<SendouButton
@@ -331,14 +337,12 @@ function MapPreparer({
 
 	return (
 		<>
-			{isMounted ? (
+			{isMounted && dialogOpen ? (
 				<BracketMapListDialog
-					isOpen={dialogOpen}
 					close={close}
 					bracket={bracket}
 					bracketIdx={bracketIdx}
 					isPreparing
-					key={bracketIdx}
 				/>
 			) : null}
 			<div className="stack sm horizontal ml-auto">
@@ -377,7 +381,7 @@ function AddSubsPopOver() {
 	}
 
 	const subsAvailableToAdd =
-		tournament.maxTeamMemberCount - ownedTeam.members.length;
+		tournament.maxMembersPerTeam - ownedTeam.members.length;
 
 	const inviteLink = `${SENDOU_INK_BASE_URL}${tournamentJoinPage({
 		tournamentId: tournament.ctx.id,

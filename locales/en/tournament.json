@@ -25,7 +25,6 @@
 	"pre.info.unregister": "Unregister",
 	"pre.info.unregister.confirm": "Unregister from the tournament and delete team info?",
 	"pre.info.noHost": "My team prefers not to host rooms",
-	"pre.info.noScreen": "My team prefers to avoid Splattercolor Screen",
 	"pre.roster.header": "Fill roster",
 	"pre.roster.footer": "At least {{atLeastCount}} members are required to participate. Max roster size is {{maxCount}}",
 	"pre.roster.addTrusted.header": "Add people you have played with",
@@ -137,5 +136,6 @@
 	"progression.error.NAME_MISSING": "Bracket name missing",
 	"progression.error.NEGATIVE_PROGRESSION": "Negative progression only possible for double elimination",
 	"progression.error.NO_SE_SOURCE": "Single elimination is not a valid source bracket",
-	"progression.error.NO_DE_POSITIVE": "Double elimination is not valid for positive progression"
+	"progression.error.NO_DE_POSITIVE": "Double elimination is not valid for positive progression",
+	"progression.error.SWISS_EARLY_ADVANCE_NO_DESTINATION": "Swiss bracket with early advance/elimination must lead to another bracket"
 }

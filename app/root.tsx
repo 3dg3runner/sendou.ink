@@ -48,6 +48,7 @@ import { useIsMounted } from "./hooks/useIsMounted";
 import { DEFAULT_LANGUAGE } from "./modules/i18n/config";
 import i18next, { i18nCookie } from "./modules/i18n/i18next.server";
 import type { Namespace } from "./modules/i18n/resources.server";
+import { IS_E2E_TEST_RUN } from "./utils/e2e";
 import { isRevalidation, metaTags } from "./utils/remix";
 import { SUSPENDED_PAGE } from "./utils/urls";
 
@@ -63,10 +64,11 @@ import "~/styles/vars.css";
 export const shouldRevalidate: ShouldRevalidateFunction = (args) => {
 	if (isRevalidation(args)) return true;
 
-	// // reload on language change so the selected language gets set into the cookie
-	const lang = args.nextUrl.searchParams.get("lng");
+	// user settings, lang change etc. require revalidation on root loader
+	const isSettingsPage = args.currentUrl.pathname === "/settings";
+	if (isSettingsPage) return true;
 
-	return Boolean(lang);
+	return false;
 };
 
 export const meta: MetaFunction = (args) => {
@@ -176,7 +178,7 @@ function Document({
 				<Fonts />
 			</head>
 			<body style={customizedCSSVars}>
-				{process.env.NODE_ENV === "development" && <HydrationTestIndicator />}
+				{IS_E2E_TEST_RUN && <HydrationTestIndicator />}
 				<React.StrictMode>
 					<RouterProvider navigate={navigate} useHref={useHref}>
 						<I18nProvider locale={i18n.language}>
